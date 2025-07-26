@@ -17,3 +17,23 @@ for i in range(len(numbers)):
 
 #len function
 print(len(numbers)) #len function gives you number of elements present in the list
+colours=["Red" ,"blue","green","yellow"]
+#append function add-new element at the end of the list
+
+colours.append("purple")
+#add new element using user input
+x=input("enter your color")
+colours.append(x)
+print(colours)
+
+#insert function-add new element at a particular location
+colours.insert(2,"black")   
+print(colours)     
+colours.insert(0,x)
+print(colours)
+
+#deleting elements 
+colours.remove("Red")
+print(colours)
+
+#reversing
