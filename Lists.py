@@ -11,12 +11,13 @@ print(numbers[2])
 print(numbers[4])
 
 #iteration
-for i in range(len(numbers)):
+for i in range(len(numbers)): #len (numbers) tells how many things are in the list - for i in range go through every number in the list
     print(i) #prints index number 
     print(numbers[i]) #prints value placed at that location index number 
 
 #len function
 print(len(numbers)) #len function gives you number of elements present in the list
+
 colours=["Red" ,"blue","green","yellow"]
 #append function add-new element at the end of the list
 
@@ -36,4 +37,22 @@ print(colours)
 colours.remove("Red")
 print(colours)
 
+# for loop-range(start,end,step)
+#for i in range(100,49,-2):
+    #print(i)
 #reversing
+#method 1
+rev_list=[]
+for i in range(len(colours)-1,-1,-1):
+    rev_list.append(colours[i])
+print(rev_list)
+
+# method 2
+colours.reverse()
+print(colours)
+
+#Sorting:Arranging elements in an ascending order
+colours.sort()
+print(colours)
+#Slicing
+print(colours[1:4]) #print element at index number 1 to 3
